@@ -30,3 +30,21 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #242424;
 }
+
+/* Define the bounce animation */
+@keyframes bounce {
+  0% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-5px);
+  }
+}
+
+/* Apply the animation to incoming messages */
+.bounce {
+  animation: bounce 0.5s ease-in-out;
+}
